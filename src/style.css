@@ -119,6 +119,7 @@ section { padding: 4rem 1.5rem; }
 
 /* Imagen más grande */
 .about-grid img {
+  width: 100%;
   max-width: 420px;
   height: auto;
   margin: auto;
