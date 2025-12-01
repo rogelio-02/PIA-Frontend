@@ -149,6 +149,7 @@ section { padding: 4rem 1.5rem; }
 }
 
 .card {
+  overflow: hidden;
   background: white;
   padding: 1.5rem;
   border-radius: var(--radius);
