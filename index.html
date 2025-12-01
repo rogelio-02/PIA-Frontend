@@ -57,23 +57,35 @@
     <div class="projects-grid">
 
       <article class="project-card card">
-        <img src="img/foto1.jpg" alt="Preview del proyecto Dashboard Minimalista" width="400" height="267" />
-        <h3 class="project-title" id="project-title-1">Dashboard Minimalista</h3>
-        <p class="project-desc">Sistema de gestión con autenticación y gráficos dinámicos.</p>
+        <figure>
+          <img src="img/foto1.jpg" alt="Preview del proyecto Dashboard Minimalista" width="400" height="267" />
+          <figcaption>
+            <h3 class="project-title" id="project-title-1">Dashboard Minimalista</h3>
+            <p class="project-desc">Sistema de gestión con autenticación y gráficos dinámicos.</p>
+          </figcaption>
+        </figure>
         <button class="btn-secondary project-more" aria-labelledby="project-title-1">Ver más</button>
       </article>
 
       <article class="project-card card">
-        <img src="img/foto2.jpg" alt="Preview del proyecto E-commerce Simple" width="400" height="266" />
-        <h3 class="project-title" id="project-title-2">E-commerce Simple</h3>
-        <p class="project-desc">Catálogo, carrito y backend completo dentro.</p>
+        <figure>
+          <img src="img/foto2.jpg" alt="Preview del proyecto E-commerce Simple" width="400" height="266" />
+          <figcaption>
+            <h3 class="project-title" id="project-title-2">E-commerce Simple</h3>
+            <p class="project-desc">Catálogo, carrito y backend completo dentro.</p>
+          </figcaption>
+        </figure>
         <button class="btn-secondary project-more" aria-labelledby="project-title-2">Ver más</button>
       </article>
 
       <article class="project-card card">
-        <img src="img/foto3.jpg" alt="Preview del proyecto Landing Page Pro" width="400" height="267" />
-        <h3 class="project-title" id="project-title-3">Landing Page Pro</h3>
-        <p class="project-desc">Landing elegante, rápida y totalmente responsiva.</p>
+        <figure>
+          <img src="img/foto3.jpg" alt="Preview del proyecto Landing Page Pro" width="400" height="267" />
+          <figcaption>
+            <h3 class="project-title" id="project-title-3">Landing Page Pro</h3>
+            <p class="project-desc">Landing elegante, rápida y totalmente responsiva.</p>
+          </figcaption>
+        </figure>
         <button class="btn-secondary project-more" aria-labelledby="project-title-3">Ver más</button>
       </article>
 
@@ -113,6 +125,19 @@
 </section>
 
 </main>
+
+<div id="project-modal" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+    <button id="modal-close-btn" class="modal-close-btn">×</button>
+    <img id="modal-img" src="" alt="" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <div id="modal-links">
+      <a id="modal-live-link" href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
+      <a id="modal-repo-link" href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
+    </div>
+  </div>
+</div>
 
 <footer>
   © 2025 Sergio Canales — Full Stack Developer
