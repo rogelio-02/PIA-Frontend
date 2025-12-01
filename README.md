@@ -27,7 +27,7 @@ La accesibilidad ha sido una prioridad en el desarrollo de este proyecto. Se han
 
 ### Diseño Responsivo
 
-El diseño del sitio es totalmente responsivo, lo que significa que se adapta a diferentes tamaños de pantalla, desde teléfonos móviles hasta ordenadores de escritorio. Se ha utilizado un enfoque "mobile-first", diseñando primero para pantallas pequeñas y luego añadiendo estilos para pantallas más grandes.
+El diseño del sitio es totalmente responsivo, lo que significa que se adapta a diferentes tamaños de pantalla, desde teléfonos móviles hasta ordenadores de escritorio. Se ha utilizado un enfoque "mobile-first", diseñando primero para pantallas pequeñas y luego añadiendo estilos para pantallas más grandes. Para garantizar que las imágenes mantengan su proporción y no se distorsionen, se utiliza la propiedad `object-fit: cover` en las tarjetas de los proyectos.
 
 ### Minimalismo
 
@@ -35,7 +35,7 @@ El diseño del sitio es minimalista, centrándose en el contenido y eliminando c
 
 ### Rendimiento
 
-Se ha prestado atención al rendimiento del sitio para garantizar que se cargue rápidamente. Se han optimizado las imágenes y se ha minimizado el uso de JavaScript.
+Se ha prestado atención al rendimiento del sitio para garantizar que se cargue rápidamente. Se han optimizado las imágenes y se ha minimizado el uso de JavaScript. Además, se utiliza el atributo `loading="lazy"` en las imágenes para diferir la carga de las que no están en la vista inicial, mejorando así el tiempo de carga percibido.
 
 ## Tecnologías Utilizadas
 

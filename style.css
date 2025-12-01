@@ -119,7 +119,6 @@ section { padding: 4rem 1.5rem; }
 
 /* Imagen más grande */
 .about-grid img {
-  width: 100%;
   max-width: 420px;
   height: auto;
   margin: auto;
@@ -133,6 +132,21 @@ section { padding: 4rem 1.5rem; }
   gap: 2rem;
 }
 
+.project-card__image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.project-card__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
 .card {
   background: white;
   padding: 1.5rem;
@@ -141,11 +155,17 @@ section { padding: 4rem 1.5rem; }
   transition: var(--transition);
 }
 
-.card:hover { transform: translateY(-5px); }
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card:hover .project-card__image-container img {
+  transform: scale(1.05);
+}
 
 .btn-secondary {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.8rem;
   padding: 0.7rem 1.4rem;
   border: 2px solid var(--primary);
   color: var(--primary);
